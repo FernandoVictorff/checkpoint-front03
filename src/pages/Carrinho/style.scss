@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.button-excluir {
+    color: hsl(0, 0%, 99%);
+    background-color: rgb(223, 90, 90);
+    padding: 7px 25px;
+    border-radius: 4px;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: 1rem;
+    
+    &:hover {
+        cursor: pointer;
+        transition: ease-out 0.2s;
+        transform: scale(1.02);
+    }
+}
+
+.item-produto {
+    background-color: rgba(rgb(124, 190, 133), .555) !important;
+    margin: 1rem;
+    border-radius: 5px;
+    padding: 1rem;
+} 

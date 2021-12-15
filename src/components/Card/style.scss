@@ -1,0 +1,28 @@
+.card-produto {
+    background-color: rgba(rgb(124, 190, 133), .555) !important;
+    margin: 1rem;
+}
+
+.imagem-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62%;
+}
+
+.button {
+    color: hsl(0, 0%, 99%);
+    background-color: rgb(72, 134, 228);
+    padding: 17px 50px;
+    border-radius: 4px;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    
+    &:hover {
+        cursor: pointer;
+        transition: ease-out 0.2s;
+        transform: scale(1.02);
+    }
+  }

@@ -1,12 +1,10 @@
 import api from '../../services/api';
 import { useState, useEffect, useCallback } from 'react';
-import { Card } from "../../components/Card";
-
+import { CardProduto } from '../../components/Card';
+import './style.scss';
 
 export const Produtos = () => {
   const [produtos, setProdutos] = useState([]);
-
-  console.log(produtos);
 
   const loadData = useCallback(() => {
     (async function loadDataa() {
@@ -15,9 +13,8 @@ export const Produtos = () => {
         setProdutos(
           response.data
         );
-        console.log(produtos);
       } catch (error) {
-        console.log("Verifique sua conexão com a internet");
+        console.log("Erro ao buscar API");
       }
     })()
   }, []);
@@ -29,7 +26,7 @@ export const Produtos = () => {
   return (
     <main>
       {produtos.map(produto => {
-        return (<Card key={produtos.id} produto={produto} />)
+        return (<CardProduto key={produtos.id} produto={produto} />)
       })}
     </main>
   )
